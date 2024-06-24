@@ -4,6 +4,11 @@
   --background: #343940;
 }
 
+::selection {
+  background-color: #2aefcb;
+  color: var(--background);
+}
+
 * {
   box-sizing: border-box;
 }
