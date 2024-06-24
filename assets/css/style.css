@@ -67,6 +67,7 @@ main {
   justify-content: center;
   white-space: pre-wrap;
   border-radius: 5px;
+  user-select: all;
 }
 
 footer {
