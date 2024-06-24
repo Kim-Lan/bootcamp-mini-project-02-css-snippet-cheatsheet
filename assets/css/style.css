@@ -44,7 +44,7 @@ main {
 
 .code-card .card-header {
   position: relative;
-  margin: -15px 0 15px 0;
+  margin: -20px 0 15px 0;
   padding: 4px 8px;
   background: var(--background);
   border: 2px solid var(--secondary);
