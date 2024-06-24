@@ -1,0 +1,26 @@
+:root {
+  --primary: rgba(232, 102, 236, 1);
+  --secondary: #fff;
+}
+
+body {
+  background: #343940;
+  color: var(--primary);
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+header p {
+  color: var(--secondary);
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    width: 90%;
+  }
+}
