@@ -39,15 +39,23 @@ main {
   padding: 0 15px;
   display: flex;
   flex-direction: column;
+  transition: all 0.5s ease-in-out;
 }
 
 .code-card .card-header {
   position: relative;
   margin: -15px 0 15px 0;
+  padding: 4px 8px;
   background: var(--background);
   border: 2px solid var(--secondary);
-  border-radius: 5px;
-  padding: 4px 8px;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
+    0 0 15px rgba(232, 102, 236, 1);
 }
 
 .code-card p {
@@ -66,7 +74,7 @@ main {
   flex-direction: column;
   justify-content: center;
   white-space: pre-wrap;
-  border-radius: 5px;
+  border-radius: 8px;
   user-select: all;
 }
 
