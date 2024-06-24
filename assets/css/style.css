@@ -1,26 +1,86 @@
 :root {
   --primary: rgba(232, 102, 236, 1);
   --secondary: #fff;
+  --background: #343940;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: #343940;
+  background: var(--background);
   color: var(--primary);
   font-family: sans-serif;
 }
 
 header {
   text-align: center;
-  width: 75%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 30px auto;
 }
 
 header p {
   color: var(--secondary);
 }
 
-@media screen and (max-width: 992px) {
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px 25px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.code-card {
+  border: 2px dashed var(--secondary);
+  width: 95%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-card .card-header {
+  position: relative;
+  margin: -15px 0 15px 0;
+  background: var(--background);
+  border: 2px solid var(--secondary);
+  border-radius: 5px;
+  padding: 4px 8px;
+}
+
+.code-card p {
+  margin: 0;
+}
+
+.code-card pre {
+  color: var(--secondary);
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );
+  padding: 8px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: pre-wrap;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .code-card {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
   header {
-    width: 90%;
+    width: 75%;
+  }
+
+  .code-card {
+    width: 30%;
   }
 }
